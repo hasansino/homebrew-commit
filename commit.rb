@@ -5,23 +5,23 @@
 class Commit < Formula
   desc "Commit helper tool"
   homepage "https://github.com/hasansino/commit"
-  version "1.10.0"
+  version "1.11.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hasansino/commit/releases/download/v1.10.0/commit_1.10.0_macOS_x86_64.tar.gz"
-      sha256 "9404729ce081da80f58b3589322ac8d713b16fc18bc7e8aaaac91ab80c1a5a15"
+      url "https://github.com/hasansino/commit/releases/download/v1.11.0/commit_1.11.0_macOS_x86_64.tar.gz"
+      sha256 "7579cd9c164a328d1a87d5838781e8db5de3c23e12eb5fdd4ed5f21759f28460"
 
       def install
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hasansino/commit/releases/download/v1.10.0/commit_1.10.0_macOS_arm64.tar.gz"
-      sha256 "eef6162ec5f61d7b609a433eb9afa0eccb81ab7b6ad155a8fbb73b162995ca4f"
+      url "https://github.com/hasansino/commit/releases/download/v1.11.0/commit_1.11.0_macOS_arm64.tar.gz"
+      sha256 "0bb83664d0e91d25afc3ad6f1ccbaaf0357c1bcdb6e1215f5dcfa1fd5f1c5343"
 
       def install
         bin.install "commit"
@@ -31,15 +31,15 @@ class Commit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.10.0/commit_1.10.0_linux_x86_64.tar.gz"
-      sha256 "313d77eded58445c5e442abaabdc4dfc32e720c10d84fe27337779784e606165"
+      url "https://github.com/hasansino/commit/releases/download/v1.11.0/commit_1.11.0_linux_x86_64.tar.gz"
+      sha256 "6e7750598ed0bad3411a7c0f29e93817452f9eb904acfa1887d9704e8f54dd31"
       def install
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.10.0/commit_1.10.0_linux_arm64.tar.gz"
-      sha256 "080ab8654289dde331cbe9e4ad8b8fd943f4dea88a173cebe913f02fed046c5e"
+      url "https://github.com/hasansino/commit/releases/download/v1.11.0/commit_1.11.0_linux_arm64.tar.gz"
+      sha256 "4b146ac5b6eb61f460544dfcc1819ec2c884eedf2ed908e562fd004cbb8e59ad"
       def install
         bin.install "commit"
       end
