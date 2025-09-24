@@ -5,23 +5,23 @@
 class Commit < Formula
   desc "Commit helper tool"
   homepage "https://github.com/hasansino/commit"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hasansino/commit/releases/download/v1.8.0/commit_1.8.0_macOS_x86_64.tar.gz"
-      sha256 "8c92297c61f0a534b9e5e6e2e3a21347ef9116d60f5c14a98ec5afc4b1592318"
+      url "https://github.com/hasansino/commit/releases/download/v1.9.0/commit_1.9.0_macOS_x86_64.tar.gz"
+      sha256 "8e231b1bbbfe19d57bb99fca56beb9a85106e02bf2303c91b9c4cbccc91b2f8a"
 
       def install
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hasansino/commit/releases/download/v1.8.0/commit_1.8.0_macOS_arm64.tar.gz"
-      sha256 "687d243267244b5a3b49d2575d18d1dc66f4376f5a8e6386529d60fb4288bdab"
+      url "https://github.com/hasansino/commit/releases/download/v1.9.0/commit_1.9.0_macOS_arm64.tar.gz"
+      sha256 "08a2cc530a2b868824898c08ed79a009ad81a7ea4beacb0937188892ce0c6c40"
 
       def install
         bin.install "commit"
@@ -31,15 +31,15 @@ class Commit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.8.0/commit_1.8.0_linux_x86_64.tar.gz"
-      sha256 "33859d1ca038136e96a59af67e2e6b0de27c211d1a4b281755b2429b9d7e0d01"
+      url "https://github.com/hasansino/commit/releases/download/v1.9.0/commit_1.9.0_linux_x86_64.tar.gz"
+      sha256 "9bd4d1884e9d066174f4362c05a87beb83e7a95e41f2797da7a27c0972caabb2"
       def install
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.8.0/commit_1.8.0_linux_arm64.tar.gz"
-      sha256 "2ebd8cc78246ee7b1bcdf6a56d01213411c1130611d0de887534e0381cd927d1"
+      url "https://github.com/hasansino/commit/releases/download/v1.9.0/commit_1.9.0_linux_arm64.tar.gz"
+      sha256 "cdb1903ef109167ce490788fdba6802ec12ca596be52d1c8ca84bf1078c29127"
       def install
         bin.install "commit"
       end
