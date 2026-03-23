@@ -5,23 +5,23 @@
 class Commit < Formula
   desc "Commit helper tool"
   homepage "https://github.com/hasansino/commit"
-  version "1.19.0"
+  version "1.20.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hasansino/commit/releases/download/v1.19.0/commit_1.19.0_macOS_x86_64.tar.gz"
-      sha256 "4415e3df11af1fe37c5e3109f8529368b71b73df16742da3367b9b2fea0ff5b9"
+      url "https://github.com/hasansino/commit/releases/download/v1.20.0/commit_1.20.0_macOS_x86_64.tar.gz"
+      sha256 "6003a9e0e07d1e97291e5946454a60e15d1b7c39e7300d775d54761390e31150"
 
       define_method(:install) do
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hasansino/commit/releases/download/v1.19.0/commit_1.19.0_macOS_arm64.tar.gz"
-      sha256 "70a64562f57fc4e398cff6be42ca054be6ecd4b2a144432cbcd97a3aaa760524"
+      url "https://github.com/hasansino/commit/releases/download/v1.20.0/commit_1.20.0_macOS_arm64.tar.gz"
+      sha256 "678299debb83eb466ce591958f36c4744befff2948b27046dc84d953a2e40784"
 
       define_method(:install) do
         bin.install "commit"
@@ -31,15 +31,15 @@ class Commit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.19.0/commit_1.19.0_linux_x86_64.tar.gz"
-      sha256 "7f7aeb19e2848b63d4c6b1f5c5b4cfeaee33b26d8b8c02a451c193dfa8a281cf"
+      url "https://github.com/hasansino/commit/releases/download/v1.20.0/commit_1.20.0_linux_x86_64.tar.gz"
+      sha256 "65c467082d33df67d8ebc543009b6d57b383e727dbe633bf53a23b4c9f7d9af4"
       define_method(:install) do
         bin.install "commit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasansino/commit/releases/download/v1.19.0/commit_1.19.0_linux_arm64.tar.gz"
-      sha256 "63049dfae0d78662b6d42f6fa7dd21c73a84e8bfbd76a3c970e66291fa496bfc"
+      url "https://github.com/hasansino/commit/releases/download/v1.20.0/commit_1.20.0_linux_arm64.tar.gz"
+      sha256 "ee16ca0289e3a76bedabe1f78575142f6cad96b2e49ccfa66cc41e6fed99e4a0"
       define_method(:install) do
         bin.install "commit"
       end
